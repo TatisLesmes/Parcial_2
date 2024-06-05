@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const player = require('./LesmesPlayer');
+const LesmesPlayer = require('./LesmesPlayer');
 
 const { Schema } = mongoose;
 
@@ -15,4 +15,4 @@ const playerSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model('Player', playerSchema);
+module.exports = mongoose.model('LesmesPlayer', playerSchema);
